@@ -1,0 +1,63 @@
+# Bosser kits -> CubeMain rows (run: python tools/build_testing.py --base reference/s13)
+# Cube input for every row: 1 Identify Scroll + 1 chipped <gem> + <part> Town Portal Scrolls.
+# Outputs use INTERNAL names (UniqueItems/SetItems "index" column), not in-game names, e.g.
+#   Merman's Speed = Merman's Sprocket, Thudergod's Vigor = Thundergod's Vigor, Kerke's Sanctuary = Gerke's Sanctuary,
+#   Gorerider = Gore Rider, Steelpillar = Steel Pillar, Steelshade = Steel Shade, Wisp = Wisp Projector,
+#   Wartraveler = War Traveler, Martyr = Martyrdom, Bul Katho's Wedding Band = Bul-Kathos' Wedding Band.
+# tgl,uni = Magefist, 7cr,uni = Azurewrath OR Lightsabre (their index names are duplicated, so they can't be named).
+# Runes: r01 El ... r33 Zod.  Bases: code,nor,sock=N (eth = ethereal).  Skillers: cm3,mag,pre=<MagicPrefix *comment id>.
+# kit	gem	part	output1	output2	output3
+
+# Hydra Sorceress - ruby
+Hydra Sorceress	ruby	1	Embersworn	Harlequin Crest	tgl,uni
+Hydra Sorceress	ruby	2	Arachnid Mesh	Merman's Speed	Mara's Kaleidoscope
+Hydra Sorceress	ruby	3	The Stone of Jordan	The Stone of Jordan	uit,nor,sock=4
+Hydra Sorceress	ruby	4	r26	r26	r28
+Hydra Sorceress	ruby	5	r31	utp,nor,sock=3	r29
+Hydra Sorceress	ruby	6	r28	r12	Hellfire Torch
+Hydra Sorceress	ruby	7	Annihilus	Gheed's Fortune	cm3,mag,pre=442
+Hydra Sorceress	ruby	8	7wc,nor,eth,sock=4	r30	r30
+Hydra Sorceress	ruby	9	r23	r24	Shaftstop
+
+# Lightning Fury Javazon - topaz
+Lightning Fury Javazon	topaz	1	Thunderstroke	Spirit Ward	Griffon's Eye
+Lightning Fury Javazon	topaz	2	Guardian Angel	Thudergod's Vigor	Treads of Cthon
+Lightning Fury Javazon	topaz	3	Highlord's Wrath	Raven Frost	Bul Katho's Wedding Band
+Lightning Fury Javazon	topaz	4	uvg,mag,pre=768	Hellfire Torch	Annihilus
+Lightning Fury Javazon	topaz	5	Gheed's Fortune	Andariel's Visage	Dracul's Grasp
+Lightning Fury Javazon	topaz	6	7wc,nor,eth,sock=4	r30	r30
+Lightning Fury Javazon	topaz	7	r23	r24	String of Ears
+
+# Whirlwind Barbarian - diamond
+Whirlwind Barbarian	diamond	1	Steelpillar	Halaberd's Reign	Wraithskin
+Whirlwind Barbarian	diamond	2	Steelrend	Nosferatu's Coil	Gorerider
+Whirlwind Barbarian	diamond	3	Highlord's Wrath	Wisp	Raven Frost
+Whirlwind Barbarian	diamond	4	Hellfire Torch	Annihilus	Gheed's Fortune
+Whirlwind Barbarian	diamond	5	cm3,mag,pre=479	Templar's Might	6lw,nor,sock=4
+Whirlwind Barbarian	diamond	6	r27	r31	r20
+Whirlwind Barbarian	diamond	7	r02
+
+# Wake of Fire Assassin - skull
+Wake of Fire Assassin	skull	1	Ghostflame	Kerke's Sanctuary	Steelshade
+Wake of Fire Assassin	skull	2	Guardian Angel	tgl,uni	String of Ears
+Wake of Fire Assassin	skull	3	Marrowwalk	Mara's Kaleidoscope	Bul Katho's Wedding Band
+Wake of Fire Assassin	skull	4	Raven Frost	Hellfire Torch	Annihilus
+Wake of Fire Assassin	skull	5	Gheed's Fortune	cm3,mag,pre=502	Laying of Hands
+Wake of Fire Assassin	skull	6	7wc,nor,eth,sock=4	r30	r30
+Wake of Fire Assassin	skull	7	r23	r24
+
+# Poison Strike Necromancer - emerald
+Poison Strike Necromancer	emerald	1	Martyr	Andariel's Visage	Trang-Oul's Claws
+Poison Strike Necromancer	emerald	2	Arachnid Mesh	Sandstorm Trek	Mara's Kaleidoscope
+Poison Strike Necromancer	emerald	3	Wisp	The Stone of Jordan	7cr,nor,sock=3
+Poison Strike Necromancer	emerald	4	r32	r19	r22
+Poison Strike Necromancer	emerald	5	utp,nor,sock=4	r25	r20
+Poison Strike Necromancer	emerald	6	r33	r15	Hellfire Torch
+Poison Strike Necromancer	emerald	7	Annihilus	Gheed's Fortune	cm3,mag,pre=455
+
+# Sacrifice (Lightning) Paladin - sapphire
+Sacrifice Paladin	sapphire	1	7cr,uni	Skywarden	Griffon's Eye
+Sacrifice Paladin	sapphire	2	Guardian Angel	Dracul's Grasp	Thudergod's Vigor
+Sacrifice Paladin	sapphire	3	Wartraveler	Highlord's Wrath	Wisp
+Sacrifice Paladin	sapphire	4	Raven Frost	Hellfire Torch	Annihilus
+Sacrifice Paladin	sapphire	5	Gheed's Fortune	cm3,mag,pre=467	Stormspire
